@@ -28,7 +28,7 @@ Versão estável atual: 3.1.0.
 
 1. Baixe ou clone este repositório.
 2. Feche o Premiere Pro.
-3. Execute `installer/INSTALAR.bat`.
+3. Execute `installer/INSTALAR.bat` (ele gera o `.ccx` localmente e instala).
 4. Abra o Premiere.
 5. Acesse `Janela > Plugins UXP > GD Timeline Colors Pro`.
 6. Na Timeline, mantenha `Show Source Clip Name and Label` ativado.
@@ -63,7 +63,7 @@ A ordem técnica dos slots está documentada em `docs/PALETA.md`.
 plugin/      código-fonte do painel UXP
 preset/      preset definitivo de labels
 installer/   instalador e desinstalador Windows
-release/     pacote CCX pronto para instalar
+build/       pacote CCX gerado localmente pelo instalador
 docs/        documentação técnica
 ```
 
