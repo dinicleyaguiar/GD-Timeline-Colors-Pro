@@ -13,7 +13,7 @@ pause
 set "ROOT=%~dp0.."
 set "PRESETDIR=%USERPROFILE%\Documents\Adobe\Common\Assets\Label Color Presets"
 set "PRESET=%ROOT%\preset\GD-Padrao-Definitivo.prlabelpreset"
-set "CCX=%ROOT%\release\GD-Timeline-Colors-Pro.ccx"
+set "CCX=%ROOT%\build\GD-Timeline-Colors-Pro.ccx"
 
 if not exist "%PRESETDIR%" mkdir "%PRESETDIR%" >nul 2>&1
 copy /Y "%PRESET%" "%PRESETDIR%\GD-Padrao-Definitivo.prlabelpreset" >nul
@@ -21,6 +21,14 @@ if errorlevel 1 (
   echo [AVISO] Nao foi possivel copiar o preset.
 ) else (
   echo [OK] Preset definitivo instalado.
+)
+
+echo Empacotando plugin UXP...
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0build-ccx.ps1" >nul
+if errorlevel 1 (
+  echo [ERRO] Nao foi possivel gerar o pacote CCX.
+  pause
+  exit /b 1
 )
 
 set "UPIA=C:\Program Files\Common Files\Adobe\Adobe Desktop Common\RemoteComponents\UPI\UnifiedPluginInstallerAgent\UnifiedPluginInstallerAgent.exe"
