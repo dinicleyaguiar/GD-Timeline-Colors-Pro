@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0;
+  background: #1f1f1f;
+  color: #e8e8e8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.app { padding: 16px; min-width: 270px; }
+.brand-row { display: flex; align-items: center; margin-bottom: 14px; }
+.brand-mark {
+  width: 38px; height: 38px; border-radius: 9px; margin-right: 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: #2563EB; color: white; font-weight: 800; letter-spacing: -1px;
+}
+.title { font-size: 16px; font-weight: 700; color: #fff; }
+.subtitle { margin-top: 2px; color: #9d9d9d; font-size: 10px; }
+.status-card {
+  border: 1px solid #3a3a3a; background: #292929; border-radius: 8px;
+  padding: 11px; margin-bottom: 12px;
+}
+.status-line { display: flex; align-items: center; font-size: 10px; font-weight: 700; letter-spacing: .4px; }
+.status-dot { width: 8px; height: 8px; border-radius: 50%; margin-right: 7px; background: #777; }
+.status-dot.active { background: #16A34A; }
+.status-dot.off { background: #991B1B; }
+.status-text { color: #bdbdbd; font-size: 10px; line-height: 1.45; margin-top: 8px; }
+.btn {
+  width: 100%; min-height: 34px; margin: 0 0 8px 0; padding: 8px 10px;
+  border: 1px solid #464646; border-radius: 7px; background: #303030;
+  color: #efefef; font-size: 11px; font-weight: 700;
+}
+.btn:hover { background: #3a3a3a; }
+.btn.primary { background: #2563EB; border-color: #2563EB; color: #fff; }
+.btn.primary:hover { background: #3B74EE; }
+.btn.secondary { background: #282828; }
+.btn.ghost { background: transparent; color: #bdbdbd; }
+.section-title { margin: 15px 0 9px; color: #8f8f8f; font-size: 9px; font-weight: 700; letter-spacing: .9px; }
+.legend { border: 1px solid #343434; border-radius: 8px; overflow: hidden; }
+.legend-row { display: flex; align-items: center; padding: 7px 9px; background: #252525; border-bottom: 1px solid #303030; }
+.legend-row:last-child { border-bottom: 0; }
+.legend-row.fx { background: #2d2925; }
+.legend-row i { width: 11px; height: 11px; border-radius: 3px; margin-right: 9px; flex: 0 0 auto; }
+.legend-row span { color: #d8d8d8; }
+.notice {
+  margin-top: 12px; padding: 9px; border-radius: 7px; background: #292929;
+  color: #b8b8b8; font-size: 9px; line-height: 1.45;
+}
+.footer { margin-top: 10px; text-align: center; color: #707070; font-size: 9px; }
