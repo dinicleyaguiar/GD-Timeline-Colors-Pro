@@ -1,0 +1,23 @@
+{
+  "id": "com.grupodelta.gdtimelinecolors",
+  "name": "GD Timeline Colors Pro",
+  "shortname": "GD Colors Pro",
+  "version": "3.1.0",
+  "main": "index.html",
+  "host": {
+    "app": "premierepro",
+    "minVersion": "25.6.0"
+  },
+  "manifestVersion": 5,
+  "entrypoints": [
+    {
+      "id": "gdTimelinePanel",
+      "type": "panel",
+      "minimumSize": { "width": 280, "height": 420 },
+      "maximumSize": { "width": 1200, "height": 1600 },
+      "preferredDockedSize": { "width": 320, "height": 660 },
+      "preferredFloatingSize": { "width": 360, "height": 720 },
+      "label": { "default": "GD Timeline Colors Pro" }
+    }
+  ]
+}
